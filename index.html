@@ -11,7 +11,7 @@
 
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg  fixed-top bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,10 +25,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Bags</a>
+                            <a class="nav-link" href="#bags">Bags</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled">Subscribe</a>
@@ -139,7 +139,7 @@
         </section>
         <!-- categories end -->
         <!-- shoes section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -186,7 +186,7 @@
         </section>
         <!-- shoes section end -->
         <!-- backpack section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="bags">
             <h2>backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -229,7 +229,7 @@
                                 height action.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-warning">Buy now</div>
+                            <div class="btn btn-praimary">Buy now</div>
                         </div>
                     </div>
                 </div>
@@ -237,7 +237,24 @@
         </section>
 
         <!-- backpack section end -->
+        <!-- Subscribe section -->
+        <section style="height: 300px;"
+            class="container rounded-3 d-flex justify-content-center align-items-center bg-info">
+            <div>
+                <h2>Lets stay in touch</h2>
+                <p>Get update on sale, spacials and more</p>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </section>
     </main>
+    <footer class="mt-5 text-center">
+        <p><small>copyright 2022.panda commerce. all right reserved</small></p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
